@@ -1,0 +1,17 @@
+# Development files — excluded from published package
+tests/
+examples/
+.github/
+coverage/
+node_modules/
+
+# Config files
+.gitignore
+vitest.config.js
+.eslintrc*
+
+# Logs
+*.log
+
+# Environment
+.env*

@@ -1,0 +1,59 @@
+{
+  "name": "js-helper-kit",
+  "version": "1.0.0",
+  "description": "A lightweight collection of reusable JavaScript utilities that simplify common development tasks.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./timing": "./src/timing.js",
+    "./strings": "./src/strings.js",
+    "./objects": "./src/objects.js",
+    "./validation": "./src/validation.js",
+    "./dates": "./src/dates.js",
+    "./arrays": "./src/arrays.js"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "npm-package",
+    "utility-library",
+    "open-source",
+    "javascript-utilities",
+    "debounce",
+    "throttle",
+    "deep-clone",
+    "string-utilities",
+    "date-formatting",
+    "email-validation"
+  ],
+  "author": "js-helper-kit contributors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/07shlokjoshi/js-helper-kit.git"
+  },
+  "homepage": "https://github.com/07shlokjoshi/js-helper-kit#readme",
+  "bugs": {
+    "url": "https://github.com/07shlokjoshi/js-helper-kit/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.0.0",
+    "vitest": "^2.0.0"
+  }
+}

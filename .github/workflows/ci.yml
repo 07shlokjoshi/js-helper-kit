@@ -57,12 +57,29 @@ jobs:
         run: npm ci
 
       - name: Check package structure
-        run: node --input-type=module <<'EOF'
+        run: |
+          node --input-type=module <<'EOF'
           import { createRequire } from 'module';
+
           const require = createRequire(import.meta.url);
           const pkg = require('./package.json');
-          const required = ['name','version','description','main','exports','files','license'];
+
+          const required = [
+            'name',
+            'version',
+            'description',
+            'main',
+            'exports',
+            'files',
+            'license'
+          ];
+
           const missing = required.filter(k => !pkg[k]);
-          if (missing.length) { console.error('Missing package.json fields:', missing); process.exit(1); }
+
+          if (missing.length) {
+            console.error('Missing package.json fields:', missing);
+            process.exit(1);
+          }
+
           console.log('✅ package.json structure OK');
           EOF

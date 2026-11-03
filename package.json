@@ -1,6 +1,6 @@
 {
   "name": "js-kit-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight collection of reusable JavaScript utilities that simplify common development tasks.",
   "type": "module",
   "main": "./src/index.js",

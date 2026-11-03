@@ -1,8 +1,8 @@
 # js-helper-kit
 
-[![npm version](https://img.shields.io/npm/v/js-helper-kit.svg)](https://www.npmjs.com/package/js-helper-kit)
+[![npm version](https://img.shields.io/npm/v/js-kit-helper.svg)](https://www.npmjs.com/package/js-kit-helper)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![CI](https://github.com/YOUR_USERNAME/js-helper-kit/actions/workflows/test.yml/badge.svg)](https://github.com/YOUR_USERNAME/js-helper-kit/actions/workflows/test.yml)
+[![CI](https://github.com/07shlokjoshi/js-helper-kit/actions/workflows/test.yml/badge.svg)](https://github.com/07shlokjoshi/js-helper-kit/actions/workflows/test.yml)
 
 > A lightweight collection of reusable JavaScript utilities that simplify common development tasks.
 
@@ -32,7 +32,7 @@
 ## Installation
 
 ```bash
-npm install js-helper-kit
+npm install js-kit-helper
 ```
 
 ---
@@ -49,18 +49,18 @@ import {
   isValidEmail,
   formatDate,
   isEmpty, uniqueArray, chunkArray, clamp
-} from 'js-helper-kit';
+} from 'js-kit-helper';
 ```
 
 ### Import only what you need (tree-shakable subpath exports)
 
 ```js
-import { debounce, throttle } from 'js-helper-kit/timing';
-import { capitalize, camelCase } from 'js-helper-kit/strings';
-import { deepClone } from 'js-helper-kit/objects';
-import { isValidEmail } from 'js-helper-kit/validation';
-import { formatDate } from 'js-helper-kit/dates';
-import { isEmpty, chunkArray, clamp } from 'js-helper-kit/arrays';
+import { debounce, throttle } from 'js-kit-helper/timing';
+import { capitalize, camelCase } from 'js-kit-helper/strings';
+import { deepClone } from 'js-kit-helper/objects';
+import { isValidEmail } from 'js-kit-helper/validation';
+import { formatDate } from 'js-kit-helper/dates';
+import { isEmpty, chunkArray, clamp } from 'js-kit-helper/arrays';
 ```
 
 ---

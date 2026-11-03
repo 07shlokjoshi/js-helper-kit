@@ -4,7 +4,7 @@
  * A lightweight collection of reusable JavaScript utilities that simplify
  * common development tasks.
  *
- * @module js-helper-kit
+ * @module js-kit-helper
  */
 
 // Timing utilities
